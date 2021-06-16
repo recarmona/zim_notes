@@ -1,0 +1,21 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2021-06-16T09:56:31-04:00
+
+====== Git ======
+Creado miércoles 16 junio 2021
+
+git init
+
+git remote add origin http://urldelrepo
+
+git remote remove origin
+
+
+git checkout master
+
+
+git commit -m "mensaje del commit"
+
+
+git push
