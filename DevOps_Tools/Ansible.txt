@@ -5,3 +5,6 @@ Creation-Date: 2021-04-11T18:09:38-04:00
 ====== Ansible ======
 Creado domingo 11 abril 2021
 
+
+**Para usar una libreria de python desde dentro de un virtualenv de ansible**
+-e ansible_python_interpreter=/usr/bin/python
