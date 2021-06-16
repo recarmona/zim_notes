@@ -5,3 +5,26 @@ Creation-Date: 2021-04-11T18:11:48-04:00
 ====== Google Cloud ======
 Creado domingo 11 abril 2021
 
+**Para listar los cluster corriendo**
+
+gcloud container clusters list
+
+**Para obtener las credenciales de un cluster k8s **
+
+gcloud container clusters get-credentials bigbang --region us-west1
+
+**Para deshabilitar pod security policy q pronto va a ser depreciado.**
+
+gcloud beta container clusters update bigbang --no-enable-pod-security-policy --region us-west1
+
+**Para borrar un cluster k8s**
+
+gcloud beta container clusters delete bigbang --zone us-west1
+
+**Para listar los discos usados en un proyecto de GCP**
+
+gcloud compute disks list --project=cx-tsb-testing-claude
+
+**Para hacer ssh a un nodo de un cluster k8s**
+
+gcloud compute ssh <NODE_NAME> --zone <ZONE>
