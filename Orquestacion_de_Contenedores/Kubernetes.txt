@@ -5,10 +5,17 @@ Creation-Date: 2021-04-11T18:10:22-04:00
 ====== Kubernetes ======
 Creado domingo 11 abril 2021
 
+
+**Comandos basicos para interactuar con la api de k8s**
+
 kubectl get nodes
+
+kubectl get pods -n kube-system
 
 kubect get pods -A
 
 kubectl get svc -A
 
-kubectl get pods -n 
+
+
+
