@@ -5,6 +5,10 @@ Creation-Date: 2021-04-11T18:08:56-04:00
 ====== Comandos ======
 Creado domingo 11 abril 2021
 
+**Filtrar contrenido multiple de un log**
 
+tail -f  /var/log/squid/access.log | grep '100.16\|100.17'
 
+**Búsqueda eliminando las lineas que comiencen por # y estén en blanco.**
 
+egrep -v '^(#|$)' /etc/squid/squid.conf
