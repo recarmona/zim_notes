@@ -9,6 +9,8 @@ git init
 
 git remote add origin http://urldelrepo
 
+git remote add git@github.com:recarmona/nombredelrepo.git
+
 git remote remove origin
 
 
