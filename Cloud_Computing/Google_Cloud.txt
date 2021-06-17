@@ -28,3 +28,10 @@ gcloud compute disks list --project=cx-tsb-testing-claude
 **Para hacer ssh a un nodo de un cluster k8s**
 
 gcloud compute ssh <NODE_NAME> --zone <ZONE>
+
+**Borrar un namespace atascado**
+
+
+kubectl get namespace "bigbang" -o json \
+  | tr -d "\n" | sed "s/\"finalizers\": \[[^]]\+\]/\"finalizers\": []/" \
+  | kubectl replace --raw /api/v1/namespaces/bigbang/finalize -f -
