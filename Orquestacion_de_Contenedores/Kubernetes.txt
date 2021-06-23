@@ -17,5 +17,13 @@ kubect get pods -A
 kubectl get svc -A
 
 
+**Borrar un namespace atascado**
+
+
+kubectl get namespace "bigbang" -o json \
+  | tr -d "\n" | sed "s/\"finalizers\": \[[^]]\+\]/\"finalizers\": []/" \
+  | kubectl replace --raw /api/v1/namespaces/bigbang/finalize -f -
+
+
 
 
