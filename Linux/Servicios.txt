@@ -5,3 +5,12 @@ Creation-Date: 2021-04-11T18:09:20-04:00
 ====== Servicios ======
 Creado domingo 11 abril 2021
 
+
+
+**Trabajando con Systemd**
+
+ journalctl --disk-usage
+journalctl --vacuum-size=1G
+journalctl --vacuum-time=1h
+
+
