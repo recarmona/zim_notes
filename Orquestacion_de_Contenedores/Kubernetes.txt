@@ -23,9 +23,15 @@ Persistent Volume
 
 Persistent Volume Claim
 
-[[DaemonSet]]
+DaemonSet
 
 [[ReplicaSet]]
+
+Deployment
+
+[[StatefulSet]]
+
+
 
 
 
