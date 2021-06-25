@@ -5,3 +5,50 @@ Creation-Date: 2021-06-25T10:24:39-04:00
 ====== FluxCD ======
 Creado viernes 25 junio 2021
 
+**Instalación del binario flux** 
+Utilice el siguiente enlace para conocer las versiones disponibles: https://toolkit.fluxcd.io/get-started/#install-the-flux-cli 
+Se recomienda utilizar el siguiente script para la instalación de la última versión de Flux. 
+sudo curl -sL https://toolkit.fluxcd.io/install.sh | sudo bash
+
+
+Resultado 
+[INFO] Downloading metadata https://api.github.com/repos/fluxcd/flux2/releases/latest
+[INFO] Using 0.13.4 as release
+[INFO] Downloading hash https://github.com/fluxcd/flux2/releases/download/v0.13.4/flux_0.13.4_checksums.txt
+[INFO] Downloading binary https://github.com/fluxcd/flux2/releases/download/v0.13.4/flux_0.13.4_darwin_amd64.tar.gz
+[INFO] Verifying binary download
+[INFO] Installing flux to /usr/local/bin/flux
+
+Comprobar el resultado de la instalación: 
+flux --version
+
+
+flux --help | less
+
+
+**Compruebe que cumple con las condiciones para instalar flux:** 
+flux check --pre
+
+**Exportar token de GitHub** 
+exportexport
+GITHUB_TOKEN=<your-token>
+GITHUB_USER=<your-username>
+Instalar Flux en el cluster 
+
+Utilice el comando bootstrap para instalar los componentes de flux en el cluster, crear el repositorio en GitHub y mucho más: 
+
+flux bootstrap github \
+--owner=$GITHUB_USER \
+--repository=gitops-flux-series-demo \
+--branch=main \
+--private=false \
+--path=./clusters/demo
+
+
+Ver los componentes que han sido instalados: 
+{
+kubectl get namespaces
+echo
+kubectl get pods --namespace flux-system}
+
+
