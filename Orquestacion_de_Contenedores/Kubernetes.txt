@@ -17,6 +17,18 @@ kubect get pods -A
 kubectl get svc -A
 
 
+
+Persistent Volume
+
+
+Persistent Volume Claim
+
+[[DaemonSet]]
+
+[[ReplicaSet]]
+
+
+
 **Borrar un namespace atascado**
 
 
