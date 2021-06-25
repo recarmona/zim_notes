@@ -19,7 +19,7 @@ Resultado
 [INFO] Verifying binary download
 [INFO] Installing flux to /usr/local/bin/flux
 
-Comprobar el resultado de la instalación: 
+**Comprobar el resultado de la instalación:** 
 flux --version
 
 
@@ -35,7 +35,7 @@ GITHUB_TOKEN=<your-token>
 GITHUB_USER=<your-username>
 Instalar Flux en el cluster 
 
-Utilice el comando bootstrap para instalar los componentes de flux en el cluster, crear el repositorio en GitHub y mucho más: 
+**Utilice el comando bootstrap para instalar los componentes de flux en el cluster, crear el repositorio en GitHub y mucho más:** 
 
 flux bootstrap github \
 --owner=$GITHUB_USER \
@@ -45,10 +45,16 @@ flux bootstrap github \
 --path=./clusters/demo
 
 
-Ver los componentes que han sido instalados: 
+**Ver los componentes que han sido instalados:** 
 {
 kubectl get namespaces
 echo
-kubectl get pods --namespace flux-system}
+kubectl get pods --namespace flux-system
+}
 
+**Ver los CRD creados** 
+kubectl get crd | grep fluxcd
+
+**Acelerar el ciclo de reconciliación:** 
+flux reconcile kustomization flux-system --with-source
 
