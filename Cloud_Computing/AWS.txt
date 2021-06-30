@@ -5,3 +5,5 @@ Creation-Date: 2021-04-11T18:11:33-04:00
 ====== AWS ======
 Creado domingo 11 abril 2021
 
+066  rapture init tetrate-hub
+ 1067  rapture assume tetrate-test/admin
