@@ -5,3 +5,10 @@ Creation-Date: 2021-04-11T18:06:44-04:00
 ====== Linux ======
 Creado domingo 11 abril 2021
 
+**Pacman** 
+
+pacman -Syu
+
+pacman -Ss
+
+pacman -Syy
