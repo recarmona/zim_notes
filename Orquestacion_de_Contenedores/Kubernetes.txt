@@ -44,3 +44,14 @@ kubectl get namespace "bigbang" -o json \
 minikube start --driver docker --kubernetes-version=v1.20.0
 
 https://codeburst.io/creating-a-local-development-kubernetes-cluster-with-k3s-and-traefik-proxy-7a5033cb1c2d
+
+
+k3d cluster create \
+	--servers 1 \
+	--agents 2 \
+	--k3s-server-arg "--disable=traefik" \
+	--k3s-server-arg "--disable=metrics-server" \
+	--port 80:80@loadbalancer \
+	--port 443:443@loadbalancer \
+	--api-port 6443
+
