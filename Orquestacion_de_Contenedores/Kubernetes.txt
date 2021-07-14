@@ -33,8 +33,6 @@ Deployment
 
 
 
-
-
 **Borrar un namespace atascado**
 
 
@@ -43,5 +41,5 @@ kubectl get namespace "bigbang" -o json \
   | kubectl replace --raw /api/v1/namespaces/bigbang/finalize -f -
 
 
-
+minikube start --driver docker --kubernetes-version=v1.20.0
 
