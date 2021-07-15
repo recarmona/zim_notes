@@ -55,3 +55,8 @@ k3d cluster create \
 	--port 443:443@loadbalancer \
 	--api-port 6443
 
+helm repo add traefik https://containous.github.io/traefik-helm-chart
+helm install traefik traefik/traefik
+
+kubectl port-forward $(kubectl get pods --selector "app.kubernetes.io/name=traefik" --output=name) 9000:9000
+
