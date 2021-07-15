@@ -54,6 +54,9 @@ k3d cluster create \
 	--port 80:80@loadbalancer \
 	--port 443:443@loadbalancer \
 	--api-port 6443
+	
+k3d kubeconfig get devcluster > $HOME/k3d/kubeconfig
+export KUBECONFIG=$HOME/k3d/kubeconfig
 
 helm repo add traefik https://containous.github.io/traefik-helm-chart
 helm install traefik traefik/traefik
