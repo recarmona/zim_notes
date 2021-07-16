@@ -28,6 +28,15 @@ sudo update-grub2
 Finalmente reiniciamos el sistema:
 sudo shutdown -r now
 
+**"GPG error" usando apt-get update en GNU/Linux**
+
+sudo dpkg --configure -a
+sudo rm /var/lib/apt/lists/* -vf
+sudo apt-get update
+sudo apt-get clean
+sudo apt-get update
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 16126D3A3E5C1192
+
 
 
 
