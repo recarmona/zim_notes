@@ -16,7 +16,18 @@ egrep -v '^(#|$)' [[/etc/squid/squid.conf]]
 
  E**liminar kernels antiguos en Ubuntu o Debian**
 
+Para saber cuál es nuestro kernel actual escribimos:
 uname -r
+Si queremos ver una lista de todos los kernels instalados:
+dpkg --list | grep linux-image
+Para eliminar uno de los kernels escribimos modificando "x" con el número de versión del
+mismo:
+sudo apt-get purge linux-image-x.x.x.x-generic
+Actualizamos el gestor de inicio del sistema grub2:
+sudo update-grub2
+Finalmente reiniciamos el sistema:
+sudo shutdown -r now
+
 
 
 
