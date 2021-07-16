@@ -11,7 +11,15 @@ tail -f  /var/log/squid/access.log | grep '100.16\|100.17'
 
 **Búsqueda eliminando las lineas que comiencen por # y estén en blanco.**
 
-egrep -v '^(#|$)' /etc/squid/squid.conf
+egrep -v '^(#|$)' [[/etc/squid/squid.conf]]
+
+
+ E**liminar kernels antiguos en Ubuntu o Debian**
+
+uname -r
+
+
+
 
 **Reiniciar seguro**
 
