@@ -12,3 +12,32 @@ tail -f  /var/log/squid/access.log | grep '100.16\|100.17'
 **Búsqueda eliminando las lineas que comiencen por # y estén en blanco.**
 
 egrep -v '^(#|$)' /etc/squid/squid.conf
+
+**Reiniciar seguro**
+
+tecla alt, PrintScreen + r + e + i + s + u + b
+
+**Algunos comandos de uso para Find.**
+
+Para buscar en el directorio root (/) archivos (-type) con más de 9 megas (-size)
+
+find / -type f -size +9M
+
+Para buscar todos los archivos con extensión .txt (-iname) abiertos (-atime) en los últimos
+dos días:
+
+find / -iname '*.txt' -atime -2
+
+Para buscar todos los archivos modificados o creados (-mtime) en los últimos dos días:
+
+find / -type f -mtime -2
+
+Para buscar archivos con permisos (-perm) de escritura, lectura y ejecución:
+
+find / -type f -perm 0777
+
+Para buscar un archivo de nombre texto.txt en el directorio activo y un nivel más abajo
+(subdirectorio):
+
+find -maxdepth 2 -name texto.txt
+
