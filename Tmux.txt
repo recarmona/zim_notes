@@ -1,0 +1,30 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2021-07-16T06:47:37-04:00
+
+====== Tmux ======
+Creado viernes 16 julio 2021
+
+ctrl + b y luego la tecla de combinación. Para abrir una ventana:
+ctrl + b c
+Para ir a la ventana anterior:
+ctrl + b p
+Para ir a la siguiente ventana:
+ctrl + b n
+Listar las ventanas para poder seleccionar una de ellas:
+ctrl + b w
+
+Renombra ventana:
+ctrl + b ,
+Para dividir la ventana en dos paneles:
+ctrl + b %
+Para ir al siguiente panel:
+ctrl + b {
+Para ir al panel anterior:
+ctrl + b }
+Para cerrar el panel:
+ctrl + b x
+Para cerrar la ventana:
+ctrl + b &
+Para crear una nueva sesión llamada nueva-sesion:
+tmux new -s nueva-sesion
