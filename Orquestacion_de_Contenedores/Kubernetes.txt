@@ -53,8 +53,8 @@ docker run ---rm --d name registry -p 5000:5000 -e REGISTRY_PROXY_REMOTEURL="htt
 nano [[~./k3d/registries.yaml]]
 
 
-k3d cluster create \
-		  --volume "~./k3d/registries.yaml:/etc/rancher/k3s/registries.yaml"
+k3d cluster create k3s-reinier \
+		  --volume "~./k3d/registries.yaml:/etc/rancher/k3s/registries.yaml" \
 	--servers 1 \
 	--agents 2 \
 	--k3s-server-arg "--disable=traefik" \
