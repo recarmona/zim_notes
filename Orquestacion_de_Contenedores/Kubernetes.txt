@@ -55,6 +55,7 @@ nano [[~./k3d/registries.yaml]]
 
 k3d cluster create k3s-reinier \
 		  --volume "$HOME/registries.yaml:/etc/rancher/k3s/registries.yaml" \
+		  --volume "$HOME/k3s-airgap:/var/lib/r"
 		  --image docker.uclv.cu/rancher/k3s:v1.21.2-k3s1 \
 		  --image docker.uclv.cu/rancher/k3d-proxy:v4.4.7 \
 	--servers 1 \
