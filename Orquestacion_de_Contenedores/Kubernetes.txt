@@ -46,6 +46,8 @@ minikube start --driver docker --kubernetes-version=v1.20.0
 
 https://codeburst.io/creating-a-local-development-kubernetes-cluster-with-k3s-and-traefik-proxy-7a5033cb1c2d
 
+mkdir [[~./k3d]]
+docker run ---rm --d name registry -p 5000:5000 -e REGISTRY_PROXY_REMOTEURL="https://docker.uclv.cu" docker.uclv.cu/registry:2
 
 k3d cluster create \
 	--servers 1 \
