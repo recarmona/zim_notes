@@ -55,16 +55,17 @@ nano [[~./k3d/registries.yaml]]
 
 k3d cluster create k3s-reinier \
 		  --volume "$HOME/registries.yaml:/etc/rancher/k3s/registries.yaml" \
-		  --volume "$HOME/k3s-airgap:/var/lib/r"
-		  --image docker.uclv.cu/rancher/k3s:v1.21.2-k3s1 \
+		  --volume "$HOME/k3s-airgap:/var/lib/rancher/k3s/images"
+		   --servers 1 \
+--agents 2 \
+--k3s-server-arg "--disable=traefik" \
+--k3s-server-arg "--disable=metrics-server" \
+--port 80:80@loadbalancer \
+--port 443:443@loadbalancer \
+--api-port 6443
+
+	   --image docker.uclv.cu/rancher/k3s:v1.21.2-k3s1 \
 		  --image docker.uclv.cu/rancher/k3d-proxy:v4.4.7 \
-	--servers 1 \
-	--agents 2 \
-	--k3s-server-arg "--disable=traefik" \
-	--k3s-server-arg "--disable=metrics-server" \
-	--port 80:80@loadbalancer \
-	--port 443:443@loadbalancer \
-	--api-port 6443
 	
 k3d kubeconfig get devcluster > $HOME/k3d/kubeconfig
 export KUBECONFIG=$HOME/k3d/kubeconfig
