@@ -35,5 +35,20 @@ se pueden usar como bd primarias.
 
 **Bases de Datos relacionales**
 
-[[MySql,]] PostgreSql
+[[MySql,]] [[PostgreSql]]
+
+ACID
+dificiles de escalar
+
+
+Modernas [[CockroadDB]]
+
+SQL vs NO-SQL
+
+**Graph Databases**
+
+Neo4j  Dgraph
+
+son buenas para graphs, patters
+
 
