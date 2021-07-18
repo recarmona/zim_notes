@@ -5,9 +5,23 @@ Creation-Date: 2021-07-18T11:27:43-04:00
 ====== Database ======
 Creado domingo 18 julio 2021
 
-Base de Datos de Clave/Valor
+**Base de Datos de Clave/Valor**
 
 Redis
+
 Memcached
 
-E
+Etcd
+
+se guardan en memoria, se usan para caching, 
+
+**Base de Datos Wide Colum**
+
+Cassandra
+HBase
+
+se guardan en memoria,  time-series, iot records, historical records
+
+
+
+
