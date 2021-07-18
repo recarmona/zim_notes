@@ -27,21 +27,26 @@ ssh -T git@github.com
 
 
 
-Evitar los merge.
+**Evitar los merge.**
 git pull --rebase
 git pull -r
 
-despues de resolver los merge
+**despues de resolver los merge**
 
 local   remote   otrodev
 git rebase --continue
 
-borrar algo ya subido.
+**borrar algo ya subido.**
 git remote -r --cached .idea
 
 
-Guardar un commit para despues
+**Guardar un commit para despues**
 
 git stash
 git stash pop
 
+**Moversers en el historial de commits**
+git checkout hash
+git checkout nombredelbranch
+
+**Deshacer commits**
