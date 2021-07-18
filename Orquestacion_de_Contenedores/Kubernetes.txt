@@ -67,7 +67,7 @@ k3d cluster create k3s-reinier \
 	   --image docker.uclv.cu/rancher/k3s:v1.21.2-k3s1 \
 		  --image docker.uclv.cu/rancher/k3d-proxy:v4.4.7 \
 	
-k3d kubeconfig get devcluster > $HOME/k3d/kubeconfig
+k3d kubeconfig get k3s-reinier > $HOME/k3d/kubeconfig
 export KUBECONFIG=$HOME/k3d/kubeconfig
 
 helm repo add traefik https://containous.github.io/traefik-helm-chart
