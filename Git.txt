@@ -50,3 +50,7 @@ git checkout hash
 git checkout nombredelbranch
 
 **Deshacer commits**
+git reset --hard HEAD~1
+git reset --soft HEAD~1
+git commit --amend
+
