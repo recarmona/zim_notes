@@ -13,7 +13,8 @@ Memcached
 
 Etcd
 
-se guardan en memoria, se usan para caching, 
+se guardan en memoria, 
+se usan para caching, messageequeue
 
 **Base de Datos Wide Colum**
 
@@ -50,5 +51,10 @@ SQL vs NO-SQL
 Neo4j  Dgraph
 
 son buenas para graphs, patters
+
+**Base de datos de búsqueda**
+
+elasticsearch, solr
+
 
 
