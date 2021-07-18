@@ -20,10 +20,11 @@ se guardan en memoria, se usan para caching,
 Cassandra
 HBase
 
-se guardan en memoria,  time-series, iot records, historical records
+se guardan en memoria, son escalables
+se usan para time-series, iot records, historical records
 
 
-Base de Datos orientadas a Documentos
+**Base de Datos orientadas a Documentos**
 
 MongoDB, DynamoDB, [[CouchDB]]
 
@@ -31,3 +32,8 @@ Con collection que contienen documents
 son rapidas para leer, pero lentas para escritura
 Se usan para juegos, mobil apps, cms
 se pueden usar como bd primarias.
+
+**Bases de Datos relacionales**
+
+[[MySql,]] PostgreSql
+
