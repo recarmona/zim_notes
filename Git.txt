@@ -36,4 +36,5 @@ despues de resolver los merge
 local   remote   otrodev
 git rebase --continue
 
-
+borrar algo ya subido.
+git remote -r --cached .idea
