@@ -24,3 +24,13 @@ cat [[~/.ssh/id_rsa.pub]]
 Controlamos si esta correcta:
 
 ssh -T git@github.com
+
+
+
+Evitar los merge.
+git pull --rebase
+git pull -r
+
+
+
+
