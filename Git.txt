@@ -38,3 +38,10 @@ git rebase --continue
 
 borrar algo ya subido.
 git remote -r --cached .idea
+
+
+Guardar un commit para despues
+
+git stash
+git stash pop
+
