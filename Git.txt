@@ -31,6 +31,9 @@ Evitar los merge.
 git pull --rebase
 git pull -r
 
+despues de resolver los merge
 
+local   remote   otrodev
+git rebase --continue
 
 
