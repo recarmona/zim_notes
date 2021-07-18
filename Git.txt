@@ -49,8 +49,19 @@ git stash pop
 git checkout hash
 git checkout nombredelbranch
 
-**Deshacer commits**
+**Deshacer commits locales**
 git reset --hard HEAD~1
 git reset --soft HEAD~1
 git commit --amend
+
+**Deshacer commits ya pusheados**
+
+git revert hash
+
+**Mezclar ramas**
+
+git merge la rama a mezclar
+
+
+
 
