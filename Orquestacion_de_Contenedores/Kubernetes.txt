@@ -55,7 +55,7 @@ nano [[~./k3d/registries.yaml]]
 
 k3d cluster create k3s-reinier \
 		  --volume "$HOME/registries.yaml:/etc/rancher/k3s/registries.yaml" \
-		  --volume "$HOME/k3s-airgap:/var/lib/rancher/k3s/images"
+		  --volume "$HOME/k3s-airgap:/var/lib/rancher/k3s/images" \
 		   --servers 1 \
 --agents 2 \
 --k3s-server-arg "--disable=traefik" \
