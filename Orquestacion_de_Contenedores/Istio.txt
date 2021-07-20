@@ -1,0 +1,12 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2021-07-20T00:39:18-04:00
+
+====== Istio ======
+Creado martes 20 julio 2021
+
+kubectl label namespace default istio-injection=enabled
+namespace/default labeled
+
+
+kubectl get namespace -L istio-injection
