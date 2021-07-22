@@ -77,3 +77,8 @@ helm install traefik traefik/traefik
 kubectl port-forward $(kubectl get pods --selector "app.kubernetes.io/name=traefik" --output=name) 9000:9000
 
 curl http://localhost:5000/v2/_catalog
+
+docker exec -it k3d-k3s-reinier-server-0 crictl images
+docker exec -it k3d-k3s-reinier-server-0 crictl ps
+
+
