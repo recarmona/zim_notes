@@ -50,6 +50,8 @@ mkdir [[~./k3d]]
 
 docker run ---rm --d name registry -p 5000:5000 -e REGISTRY_PROXY_REMOTEURL="https://docker.uclv.cu" docker.uclv.cu/registry:2
 
+ docker run -d --name registry -p 5000:5000 -e REGISTRY_PROXY_REMOTEURL="https://docker.uclv.cu" docker.uclv.cu/registry:2
+
 nano [[~./k3d/registries.yaml]]
 
 
