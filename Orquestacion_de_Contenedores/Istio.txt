@@ -10,3 +10,14 @@ namespace/default labeled
 
 
 kubectl get namespace -L istio-injection
+
+
+
+IngressGateway
+
+[[VirtualService]]
+
+[[DestinationRule]]
+
+[[AutorizationPolicy]]
+
