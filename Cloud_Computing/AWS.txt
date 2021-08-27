@@ -10,4 +10,18 @@ rapture assume tetrate-test/admin
 
 
 
-aws ec2 describe-instances --filters Name=instance-type,Values=t2.xlarge
+aws ec2 describe-instances --filters Name=instance-type,Values=t2.2xlarge
+
+
+
+#!/bin/bash
+eksctl create cluster \
+--name tsb-v090demo1-mp \
+--region us-east-2 \
+--zones us-east-2a,us-east-2b \
+--node-type t2.xlarge \
+--nodes 3 \
+--nodes-min 3 \
+--nodes-max 4 \
+--version 1.19 \
+--with-oidc
