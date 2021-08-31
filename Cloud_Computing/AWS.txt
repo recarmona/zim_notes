@@ -25,3 +25,13 @@ eksctl create cluster \
 --nodes-max 4 \
 --version 1.19 \
 --with-oidc
+
+
+Beba, [31.08.21 14:32]
+aws eks update-cluster-config --region us-east-1 --name BBistio --resources-vpc-config endpointPublicAccess=true,publicAccessCidrs="0.0.0.0/0",endpointPrivateAccess=true
+
+aws eks update-cluster-config \
+--region <region-code> \
+--name <my-cluster> \
+--resources-vpc-config endpointPublicAccess=<true>,publicAccessCidrs="<203.0.113.5/32>",endpointPrivateAccess=<true>
+
