@@ -63,5 +63,7 @@ git revert hash
 git merge la rama a mezclar
 
 
+git remote get-url origin
+
 
 
