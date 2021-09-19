@@ -5,3 +5,4 @@ Creation-Date: 2021-04-11T18:09:43-04:00
 ====== Docker ======
 Creado domingo 11 abril 2021
 
+echo $PASSWORD | docker login -u $USERNAME --password-stdin
