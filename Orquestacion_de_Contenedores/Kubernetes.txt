@@ -87,3 +87,4 @@ docker exec -it k3d-k3s-reinier-server-0 crictl ps
 
 https://registry-1.docker.io
 
+ kubectl api-resources
