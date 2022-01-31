@@ -21,3 +21,6 @@ git commit -m "mensaje del commit"
 
 
 git push
+
+
+git show-branch
