@@ -14,13 +14,19 @@ git remote add git@github.com:recarmona/nombredelrepo.git
 git remote remove origin
 
 
+**Pasar de una rama a otra**
 git checkout master
 
+**Crear una rama nueva y moverte a ella en un único paso.**
+git checkout -b otrarama
+
+git branch -d rama_a_borrar
 
 git commit -m "mensaje del commit"
 
 
 git push
 
+**Mostrar todas las ramas del proyecto con sus commits realizados**
 
 git show-branch
