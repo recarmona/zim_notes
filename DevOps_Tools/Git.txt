@@ -17,10 +17,7 @@ git remote remove origin
 **Pasar de una rama a otra**
 git checkout master
 
-**Crear una rama nueva y moverte a ella en un único paso.**
-git checkout -b otrarama
 
-git branch -d rama_a_borrar
 
 git commit -m "mensaje del commit"
 
@@ -30,3 +27,17 @@ git push
 **Mostrar todas las ramas del proyecto con sus commits realizados**
 
 git show-branch
+
+**Crear una rama nueva y moverte a ella en un único paso.**
+git checkout -b otrarama
+
+**Eliminar una rama**
+git branch -d rama_a_borrar
+git branch -D rama_a_borrar
+
+**Eliminar un branch en remoto** 
+git push origin --delete rama_a_borrar
+
+**Descargar una rama de remoto**
+git fetch
+git checkout mi_rama_remota_descargada
