@@ -2,7 +2,7 @@ Content-Type: text/x-zim-wiki
 Wiki-Format: zim 0.4
 Creation-Date: 2022-01-24T16:05:23-05:00
 
-====== ok ======
+====== Sonarqube ======
 Creado lunes 24 enero 2022
 
 version: "3"
