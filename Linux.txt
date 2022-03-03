@@ -16,3 +16,8 @@ pacman -Syy
 
 cat ~/.ssh/id_rsa.pub | \
 ssh username@ip "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+
+
+desconectar un disco cdo no se deja desmontar.
+
+sudo lsof +f -- /dev/sdb1
