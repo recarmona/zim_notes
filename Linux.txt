@@ -21,3 +21,5 @@ ssh username@ip "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 desconectar un disco cdo no se deja desmontar.
 
 sudo lsof +f -- /dev/sdb1
+
+fping -g 192.168.10.0/24 |grep alive > ipvivos
