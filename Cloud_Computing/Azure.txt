@@ -46,3 +46,9 @@ az aks update \
   --enable-cluster-autoscaler \
   --min-count 1 \
   --max-count 2
+
+
+az aks show --name learnk8s-cluster --resource-group learnk8sResourceGroup -o yaml
+
+
+az aks delete --name learnk8s-cluster --resource-group learnk8sResourceGroup
