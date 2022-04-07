@@ -22,3 +22,27 @@ az account show --subscription MySubscriptionName
 
 az account list
 az account list -o table
+
+Crear un cluster AKS usando la CLI
+
+az group list
+
+az group create --name learnk8sResourceGroup --location northeurope
+
+az account list-locations -o table
+
+az provider register -n Microsoft.ContainerService
+
+
+az aks create -g learnk8sResourceGroup -n learnk8s-cluster --generate-ssh-keys --node-count 2
+
+az aks get-credentials --resource-group learnk8sResourceGroup --name learnk8s-cluster
+Merged "learnk8s-cluster" as current context in [[/home/ubuntu/.kube/config]]
+
+
+az aks update \
+  --resource-group learnk8sResourceGroup \
+  --name learnk8s-cluster \
+  --enable-cluster-autoscaler \
+  --min-count 1 \
+  --max-count 2
