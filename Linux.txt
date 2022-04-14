@@ -23,3 +23,7 @@ desconectar un disco cdo no se deja desmontar.
 sudo lsof +f -- /dev/sdb1
 
 fping -g 192.168.10.0/24 |grep alive > ipvivos
+
+
+
+nmcli connection import type wireguard file wg0.conf
