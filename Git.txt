@@ -67,3 +67,8 @@ git remote get-url origin
 
 
 
+Crear una branch de un stash
+
+
+git stash branch <new branchname>
+
