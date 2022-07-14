@@ -72,3 +72,10 @@ Crear una branch de un stash
 
 git stash branch <new branchname>
 
+
+
+subir un branch local al repositorio.
+
+
+git push -u origin ramaasubir
+
