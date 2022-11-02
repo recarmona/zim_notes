@@ -14,3 +14,6 @@ journalctl --vacuum-size=1G
 journalctl --vacuum-time=1h
 
 
+ #add_header Content-Security-Policy "default-src 'self'; font-src 'self' data: https://fonts.gstatic.com;img-src 'self' data: ;script-src 'self' https://www.google-analytics.com 'unsafe-inline'; style-src 'self' data: https://font.googleapis.com 'unsafe-inline';";
+
+add_header Content-Security-Policy-Report-Only "default-src 'self'; font-src 'self' data: https://fonts.gstatic.com;img-src 'self' data: ;script-src 'self' https://www.google-analytics.com 'unsafe-inline'; style-src 'self' data: https://font.googleapis.com 'unsafe-inline';";
