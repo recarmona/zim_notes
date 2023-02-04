@@ -43,6 +43,7 @@ git remote -r --cached .idea
 **Guardar un commit para despues**
 
 git stash
+git merge master
 git stash pop
 
 **Moversers en el historial de commits**
