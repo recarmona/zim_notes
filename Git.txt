@@ -80,3 +80,9 @@ git stash branch <new branchname>
 
 git push -u origin ramaasubir
 
+
+**borrar branchs locales**
+
+git branch -d old-branch
+
+
