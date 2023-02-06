@@ -1,0 +1,15 @@
+Content-Type: text/x-zim-wiki
+Wiki-Format: zim 0.4
+Creation-Date: 2023-02-05T23:18:53-05:00
+
+====== GPG ======
+Creado domingo 05 febrero 2023
+
+Create a GPG key
+
+# Use this command for the default version of GPG, including
+# Gpg4win on Windows, and most macOS versions:
+gpg --gen-key
+
+# Use this command for versions of GPG later than 2.1.17:
+gpg --full-gen-key
