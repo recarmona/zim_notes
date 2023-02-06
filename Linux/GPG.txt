@@ -13,3 +13,6 @@ gpg --gen-key
 
 # Use this command for versions of GPG later than 2.1.17:
 gpg --full-gen-key
+
+
+gpg --list-secret-keys --keyid-format LONG <EMAIL>
