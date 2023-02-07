@@ -69,3 +69,7 @@ Para buscar un archivo de nombre texto.txt en el directorio activo y un nivel m√
 
 find -maxdepth 2 -name texto.txt
 
+**Desmontar disco ocupado**
+
+sudo lsof +f -- /dev/sdb1 
+
