@@ -27,3 +27,4 @@ fping -g 192.168.10.0/24 |grep alive > ipvivos
 
 
 nmcli connection import type wireguard file wg0.conf
+ansible-playbook playbook-add-job-to-prometheus.yml --extra-vars "user_sudo=gsi-reinier” --check --diff
