@@ -86,3 +86,9 @@ git push -u origin ramaasubir
 git branch -d old-branch
 
 
+Git cherry-pick
+
+
+
+
+
