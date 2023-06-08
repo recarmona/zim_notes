@@ -92,3 +92,9 @@ Git cherry-pick
 
 
 
+lista los ultimos 2 comando para modificar
+
+
+git rebase -i HEAD~2
+
+
