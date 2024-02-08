@@ -86,8 +86,8 @@ git stash --index 1
 
 git stash branch branchname 1
 
-
-git stash drop shas
+git stash drop stash@{0}
+git stash clear
 
 **subir un branch local al repositorio**.
 
