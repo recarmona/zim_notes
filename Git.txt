@@ -81,7 +81,7 @@ git stash list
 git stash show
 git stash pop
 
-git stash -m 'comment'
+git stash save -m 'comment'
 git stash --index 1
 
 git stash branch branchname 1
