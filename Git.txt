@@ -81,6 +81,14 @@ git stash list
 git stash show
 git stash pop
 
+git stash -m 'comment'
+git stash --index 1
+
+git stash branch branchname 1
+
+
+git stash drop shas
+
 **subir un branch local al repositorio**.
 
 
