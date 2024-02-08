@@ -74,6 +74,12 @@ git remote get-url origin
 git stash branch <new branchname>
 
 
+git stash
+
+git stash list
+
+git stash show
+git stash pop
 
 **subir un branch local al repositorio**.
 
