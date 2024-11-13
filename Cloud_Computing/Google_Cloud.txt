@@ -32,3 +32,5 @@ gcloud compute ssh <NODE_NAME> --zone <ZONE>
 **Ver el proyecto activo.**
 
 gcloud config get-value project
+
+
