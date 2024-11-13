@@ -1,5 +1,5 @@
 Content-Type: text/x-zim-wiki
-Wiki-Format: zim 0.4
+Wiki-Format: zim 0.6
 Creation-Date: 2021-04-11T18:11:48-04:00
 
 ====== Google Cloud ======
@@ -9,7 +9,7 @@ Creado domingo 11 abril 2021
 
 gcloud container clusters list
 
-**Para obtener las credenciales de un cluster k8s **
+**Para obtener las credenciales de un cluster k8s** 
 
 gcloud container clusters get-credentials bigbang --region us-west1
 
@@ -29,4 +29,6 @@ gcloud compute disks list --project=cx-tsb-testing-claude
 
 gcloud compute ssh <NODE_NAME> --zone <ZONE>
 
+**Ver el proyecto activo.**
 
+gcloud config get-value project
